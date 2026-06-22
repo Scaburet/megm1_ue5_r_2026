@@ -15,10 +15,10 @@ dependencies:
   - jupyterhub>=4.1.6,<5
   - jupyterlab>=4.4,<5
   - notebook>=7.4,<8
-  - jupyter-resource-usage>=1,<2
+  - jupyter-resource-usage
   - jupyterlab-topbar
-  - jupyterlab-topbar-text >=1.1.0,<2
-  #- jupyterlab-system-monitor  # cause une erreur dans la création env sur uracile
+  - jupyterlab-topbar-text
+  - jupyterlab-system-monitor  # cause une erreur dans la création env sur uracile
   - nodejs>=20
 
   # Jupyter archive
