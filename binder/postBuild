@@ -16,30 +16,37 @@ R -e "install.packages('swirl', repos='https://packagemanager.posit.co/cran/__li
 # Install R/Bioconductor package
 # https://bioconductor.org/install/
 R -e "install.packages('BiocManager', repos='https://packagemanager.posit.co/cran/__linux__/jammy/latest')"
-R -e "BiocManager::install()"
+# To use the latest version of Bioconductor for the version of R installed in the environment
+R -e "BiocManager::install()"  
 
 # Then install required packages
 # Biostrings: Efficient manipulation of biological strings
 # https://bioconductor.org/packages/release/bioc/html/Biostrings.html
-R -e "BiocManager::install('Biostrings', update = FALSE)"
-R -e "BiocManager::install('biomaRt', update = FALSE)"
-R -e "BiocManager::install('limma', update = FALSE)"
-R -e "BiocManager::install('ggtree', update = FALSE)"
-R -e "BiocManager::install('edgeR', update = FALSE)"
-R -e "BiocManager::install('ComplexHeatmap', update = FALSE)"
-R -e "BiocManager::install('enrichplot', update = FALSE)"
-R -e "BiocManager::install('clusterProfiler', update = FALSE)"
-R -e "BiocManager::install('org.Hs.eg.db', update = FALSE)"
-R -e "BiocManager::install('org.Mm.eg.db', update = FALSE)"
-R -e "BiocManager::install('ReactomePA', update = FALSE)"
-R -e "BiocManager::install('GeneBreak', update = FALSE)"
-R -e "BiocManager::install('GenomicRanges', update = FALSE)"
+R -e "BiocManager::install('Biostrings', update = TRUE)"
+
+
+# R packages for genomics
+R -e "BiocManager::install('biomaRt', update = TRUE)"
+R -e "BiocManager::install('limma', update = TRUE)"
+R -e "BiocManager::install('edgeR', update = TRUE)"
+R -e "BiocManager::install('DESeq2', update = TRUE)"
+R -e "BiocManager::install('org.Hs.eg.db', update = TRUE)"
+R -e "BiocManager::install('org.Mm.eg.db', update = TRUE)"
+R -e "BiocManager::install('GenomicRanges', update = TRUE)"
+R -e "BiocManager::install('clusterProfiler', update = TRUE)"
+R -e "BiocManager::install('GeneBreak', update = TRUE)"   # n'a pas été installé
+
+# R packages for dataviz
+R -e "BiocManager::install('ggtree', update = TRUE)"
+R -e "BiocManager::install('ComplexHeatmap', update = TRUE)"
+R -e "BiocManager::install('enrichplot', update = TRUE)"
+R -e "BiocManager::install('ReactomePA', update = TRUE)"
 R -e "BiocManager::install('EnhancedVolcano', update = FALSE)"
-R -e "BiocManager::install('DESeq2', update = FALSE)"
+TRUE
 
 #R -e "remotes::install_github('YuLab-SMU/ggtree')"
 
 # NOT TESTED : check that the R is correctly installed
-#R -e "IRkernel::installspec(user = FALSE)"
+#R -e "IRkernel::installspec(user = TRUE)"
 
 echo "postBuild finished successfully"
