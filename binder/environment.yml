@@ -18,7 +18,7 @@ dependencies:
   - jupyter-resource-usage>=1,<2
   - jupyterlab-topbar
   - jupyterlab-topbar-text >=1.1.0,<2
-  - jupyterlab-system-monitor
+  #- jupyterlab-system-monitor  # cause une erreur dans la création env sur uracile
   - nodejs>=20
 
   # Jupyter archive
