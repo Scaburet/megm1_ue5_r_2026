@@ -13,7 +13,7 @@ R -e "install.packages('swirl', repos='https://packagemanager.posit.co/cran/__li
 
 # Install R/Bioconductor package
 # https://bioconductor.org/install/
-R -e "install.packages('BiocManager', repos='https://packagemanager.rstudio.com/cran/__linux__/jammy/latest')"
+R -e "install.packages('BiocManager', repos='https://packagemanager.posit.co/cran/__linux__/jammy/latest')"
 R -e "BiocManager::install()"
 
 # Then install required packages
