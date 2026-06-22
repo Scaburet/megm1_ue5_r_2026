@@ -8,8 +8,8 @@ echo "postBuild started successfully"
 # the cran.rstudio is not optimised for Ubuntu 24.04, use P3M miror below instead
 # Using faster P3M mirror pour Ubuntu 24.04
 # R -e "install.packages('shape', repos='https://packagemanager.posit.co/cran/__linux__/jammy/latest')"
-R -e "install.packages('diagram', repos='https://packagemanager.posit.co/cran/__linux__/jammy/latest')"
-R -e "install.packages('fastmap', repos='https://packagemanager.posit.co/cran/__linux__/jammy/latest')"
+#R -e "install.packages('diagram', repos='https://packagemanager.posit.co/cran/__linux__/jammy/latest')"
+#R -e "install.packages('fastmap', repos='https://packagemanager.posit.co/cran/__linux__/jammy/latest')"
 #R -e "install.packages('swirl', repos='https://packagemanager.posit.co/cran/__linux__/jammy/latest', dependencies = TRUE)"
 R -e "install.packages('swirl', repos='https://packagemanager.posit.co/cran/__linux__/jammy/latest')"
 
