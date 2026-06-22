@@ -41,8 +41,7 @@ R -e "BiocManager::install('ggtree', update = TRUE)"
 R -e "BiocManager::install('ComplexHeatmap', update = TRUE)"
 R -e "BiocManager::install('enrichplot', update = TRUE)"
 R -e "BiocManager::install('ReactomePA', update = TRUE)"
-R -e "BiocManager::install('EnhancedVolcano', update = FALSE)"
-TRUE
+R -e "BiocManager::install('EnhancedVolcano', update = TRUE)"
 
 #R -e "remotes::install_github('YuLab-SMU/ggtree')"
 
