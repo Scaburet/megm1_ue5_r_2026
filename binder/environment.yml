@@ -42,7 +42,7 @@ dependencies:
  
   # R environment (version for Ubuntu 24.04)
   - r-irkernel>1.3
-  - r-base>=4.3
+  - r-base>=4.5
   - r-tidyverse
   - r-essentials
   - r-repr
