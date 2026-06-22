@@ -1,42 +1,71 @@
-name: plasmabio-M1MEG_UE5_R
+name: megm1_ue5_r_2026
+# d'après le repo https://github.com/CVandiedonck/megm1_ue5_r.git
+# mis à jour pour prendre en compte la maj importante de Plasma, printemps 2026
+
 # channels priority
 # see https://bioconda.github.io/
 # conda-forge has highest prioriy
 channels:
-  - defaults
-  - bioconda
   - conda-forge
+  - bioconda
+  - nodefaults
+  
 dependencies:
   # Jupyter dependencies
-  - jupyterhub>=1.5,<2
-  - jupyterlab>=3.2,<4
-  - jupyter-resource-usage
+  - jupyterhub>=4.1.6,<5
+  - jupyterlab>=4.4,<5
+  - notebook>=7.4,<8
+  - jupyter-resource-usage>=1,<2
   - jupyterlab-topbar
-  - jupyterlab-topbar-text
+  - jupyterlab-topbar-text >=1.1.0,<2
   - jupyterlab-system-monitor
-  - nodejs
-  - pip
+  - nodejs>=20
+
   # Jupyter archive
   # https://github.com/jupyterlab-contrib/jupyter-archive
-  - jupyter-archive=3.3.4
-  # R environment
-  - r-irkernel
-  - r-base>=4
+  - jupyter-archive
+  # JupyterLab Variable inspector
+  - jupyterlab-variableinspector
+  # https://github.com/lckr/jupyterlab-variableInspector
+  - nbresuse
+  - libgomp
+
+  # Build tools required for Ubuntu 24.04
+  - gxx_linux-64
+  - gcc_linux-64
+  - gfortran_linux-64
+ 
+  # R environment (version for Ubuntu 24.04)
+  - r-irkernel>1.3
+  - r-base>=4.3
   - r-tidyverse
+  - r-essentials
+  - r-repr
   - r-rcpp
+
+
+ # R packages
+  - r-dt
+  - r-Matrix
+  - r-lattice
   - r-factominer
   - r-factoextra
-  - r-dt
+  - r-fdrtool
+  - r-rpart
   - r-markdown
-  - r-tidyverse
+  - r-RSQLite
+  - r-gplots
+  - r-ggplot2
   - r-writexl
   - r-readxl
   - r-rcolorbrewer
-  - r-gplots
+  - r-igraph
+  - r-ggtangle
+  - r-pheatmap
   - r-statmod
-  # JupyterLab Variable inspector
-  # https://github.com/lckr/jupyterlab-variableInspector
-  - r-repr
+  #- r-enrichplot
+
+  - pip
   - pip:
-  # - lckr-jupyterlab-variableinspector
     - matplotlib
+    - watermark
