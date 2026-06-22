@@ -1,8 +1,10 @@
+Credits : Claire Vandiedonck
+
 # Objective
 
-This repository contains the practical material to use on PlasmaBio for the first (out of 7) session of my R lectures to the master students of the magistère européen de génétique at Université de Paris.
+This repository contains the practical material to use on PlasmaBio for the first (out of 7) session of the R lectures to the master students of the magistère européen de génétique at Université Paris Cité.
 It contains eight folders:
-- R0: with preparatory activities linked to my youtube videos on first steps in R
+- R0: with preparatory activities linked to Claire's youtube videos on first steps in R
 - R1: with a tutorial notebook on vectors, a practical notebook on vectors and a script corresponding to the tutorial notebook.
 - R2: with a readme file
 - R3: with a readme file
