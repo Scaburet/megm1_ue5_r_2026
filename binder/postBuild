@@ -34,7 +34,7 @@ R -e "BiocManager::install('org.Hs.eg.db', update = TRUE)"
 R -e "BiocManager::install('org.Mm.eg.db', update = TRUE)"
 R -e "BiocManager::install('GenomicRanges', update = TRUE)"
 R -e "BiocManager::install('clusterProfiler', update = TRUE)"
-R -e "BiocManager::install('GeneBreak', update = TRUE)"   # n'a pas été installé
+#R -e "BiocManager::install('GeneBreak', update = TRUE)"   # n'a pas été installé
 
 # R packages for dataviz
 R -e "BiocManager::install('ggtree', update = TRUE)"
