@@ -1,5 +1,11 @@
 Credits : Claire Vandiedonck
 
+## Test on Binder
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Scaburet/megm1_ue5_r_2026/master?urlpath=%2Flab/) Jupyter Lab + R kernel
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Scaburet/megm1_ue5_r_2026/master?urlpath=rstudio) RStudio
+
 # Objective
 
 This repository contains the practical material to use on PlasmaBio for the first (out of 7) session of the R lectures to the master students of the magistère européen de génétique at Université Paris Cité.
